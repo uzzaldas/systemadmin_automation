@@ -6,7 +6,7 @@ is_alive_ping()
   [ $? -eq 0 ] && echo Node with IP: $i is up.
 }
 
-for i in 192.168.82.{1..255}
+for i in 192.168.0.{1..255}
 do
 is_alive_ping $i & disown
 done
